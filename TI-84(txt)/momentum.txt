@@ -1,0 +1,31 @@
+
+Lbl M1
+Disp "M₁oV₁o+M₂oV₂o=M₁fV₁f+M₂fV₂f"
+Disp "M₁f=(M₁oV₁o+M₂oV₂o-M₂fV₂f)/V₁f"
+Input "M₁o> ",A
+Input "V₁o> ",B
+Input "M₂o> ",C
+Input "V₂o> ",D
+Input "M₂f> ",E
+Input "V₂f> ",F
+Input "V₁f> ",G
+((A*B)+(C*D)-(E*F))/G→M
+Disp "M₁f is",M
+Stop
+----
+Menu("Choose Missing","M₁",M1,"M₂",M2,"V₁o",V1,"V₂o",V2,"V₁f",V3,"V₂f",V4
+
+
+Lbl M1
+Disp "M₁=M₂(V₂f-V₂o)/(V₁o-V₁f)"
+Input "M₂> ",M
+Input "V₂f> ",A
+Input "V₂o> ",B
+Input "V₁o> ",C
+Input "V₁f> ",D
+M*(A-B)/(C-D)→A
+Disp "M₁",A
+Stop
+M₁(V₁o-V₁f)=M₂(V₂f-V₂o)
+
+M₂=M₁(V₁o-V₁f)/(V₂f-V₂o)
