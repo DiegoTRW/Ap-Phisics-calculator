@@ -1,0 +1,130 @@
+
+ClrHome
+Lbl HS
+Menu("Type of EQ","Kinetic",K,"Potential",U,"Spring",S,"Work",W,"Power",P,"Total",T,"Common Problems",CP,"Quit",QU
+
+Lbl QU
+Stop
+
+Lbl K
+Menu("Choose Equation","K=1/2(mv²)",L,"K=1/2(Iw²)",W,"Back",HS,"Quit",QU
+
+Lbl L
+Disp "K=1/2(mv²)"
+Menu("Missing Var","K",K1,"m",M,"v",V,"Back",K,"Quit",QU
+Lbl K1
+Disp "K=1/2(mv²)"
+Input "m> ",M
+Input "v> ",V
+.5*(M*V^2)→K
+Disp "Kinetic E is ",K
+Stop
+Lbl M
+Disp "M=2K/v²"
+Input "K> ",K
+Input "v> ",V
+(2*K)/V^2→M
+Disp "Mass is ",M
+Stop
+Lbl V
+Disp "v=√(2K/m)"
+Input "K> ",K
+Input "m> "M
+√(2*K/M)→V
+Disp "Velocity",V
+Stop
+
+Lbl W
+Disp "K=1/2(Iw²)"
+Menu("Missing Var","K",K,"I",I,"w",O,"Back",K,"Quit",QU
+Lbl K
+Disp "K=1/2(Iw²)"
+Input "I> ",I
+Input "w> ",W
+.5*I*(W^2)→K
+Disp "Kinetic",K
+Stop
+Lbl I
+Disp "I=2K/w²"
+Input "K> ",K
+Input "w> ",W
+(2*K)/W^2→I
+Disp "Inertia is ",I
+Stop
+Lbl O
+Disp "w=√(2K/I)"
+Input "K> ",K
+Input "w> ",W
+√(2*K/I)→W
+Disp "anlge vel is ",W
+Stop
+
+
+
+
+
+Lbl U
+Menu("Choose Equation","Grav Potent",GP,"Spring Potent",SP
+Lbl GP
+Disp "Ug=mgh"
+Input "m> ",M
+Input "g> ",G
+Input "h> ",H
+M*G*H→U
+Disp "Grav potential",U
+Stop
+Lbl SP
+Disp "Us=1/2*k*x²"
+Input "k> ",K
+Input "x> ",X
+.5*K*X^2→U
+Disp "Spring potential",U
+Stop
+
+Lbl S
+Menu("Choose topic","Hooks law",HL,"Spring potential",SP
+
+Lbl HL
+Disp "Fs=kX"
+Menu("Choose variable","Fs",FS,"k",K1,"X",XX
+Lbl FS
+Disp "Fs=kX"
+Input "k> ",K
+Input "X> ",X
+K*X→F
+Disp "Spring Force",F
+Lbl K1
+Disp "K=Fs/X"
+Input "Fs> ",F
+Input "X> ",X
+F/X→K
+Disp "Spring Const",K
+Lbl XX
+Disp "X=Fs/k"
+Input "Fs> ",F
+Input "k> ",K
+F/K→X
+Disp "X is",X
+
+Lbl W
+Disp "W=FDcos(θ)"
+Input "Force> ",F
+Input "Dis> ",D
+Input "Theta> ",O
+F*D*cos(O)→W
+Disp "Work done",W
+
+Lbl T
+Disp "KE+PE-NC=KE+PE-NC"
+Disp "NC = Non conservative force"
+Disp "NC = Friscrion or air resitance"
+Disp "Power =ME/T"
+Stop
+
+Lbl P
+Disp "Power =ME/T"
+Disp "P=F*v"
+Disp "P=W/t"
+Disp "P=Fd/t","P=Fvcosθ"
+
+
