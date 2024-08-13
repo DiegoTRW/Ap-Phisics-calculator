@@ -27,4 +27,6 @@ txt files copy and past of the .8xg
 "not made" collection of files I didn't make but you might find helpful if you can get it to work
 -------------------------
 numworks has:
-to be added later
+
+to work num works follow intructions here :
+    https://github.com/ZetaMap/Kandinsky-Numworks/blob/pysdl2/FAQ.md#how-to-install-this-module
