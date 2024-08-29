@@ -36,3 +36,7 @@ def simulation(v_0=15, alpha=pi / 4, h_0=2):
         arrow(X[i], Y[i], VX[i] / accuracy, VY[i] / accuracy)
     grid()
     show()
+
+
+simulation(5, 3.14, 5)
+simulation()
