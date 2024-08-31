@@ -30,3 +30,6 @@ numworks has:
 
 to work num works follow intructions here :
     https://github.com/ZetaMap/Kandinsky-Numworks/blob/pysdl2/FAQ.md#how-to-install-this-module
+    // havent use this yet you wont need to download it 
+
+read numworks.md for more info about numworks specifics 
