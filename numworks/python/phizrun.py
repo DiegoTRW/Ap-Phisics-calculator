@@ -1,5 +1,3 @@
-import os
-
 import kinematics
 
 # import midsend as ms
