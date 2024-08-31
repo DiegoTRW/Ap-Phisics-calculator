@@ -26,3 +26,6 @@ def roots(a, b, c):
     if a == 0:
         aws1 = print("Input correct quadratic equation")
         return aws1
+
+
+print(roots(1, 2, 3))

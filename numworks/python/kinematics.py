@@ -280,6 +280,3 @@ what value do you wanto to calculate
             )
         )
         return EQ3_IN(inp).EQ3()  # this send the value to eq3_in logic class
-
-
-# print(UI().run_kin())
