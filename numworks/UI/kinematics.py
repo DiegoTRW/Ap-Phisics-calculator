@@ -2,7 +2,7 @@ import math
 import polynomial
 
 
-class EQ1_math:
+class EQ1_Math:
     def __init__(self, V_f, V_o, a, t):
         self.V_f = V_f
         self.V_o = V_o
@@ -26,7 +26,7 @@ class EQ1_math:
         return t
 
 
-class EQ2_math:
+class EQ2_Math:
     def __init__(self, X_f, X_o, V_o, a, t):
         self.X_f = X_f
         self.X_o = X_o
@@ -57,7 +57,7 @@ class EQ2_math:
         return a
 
 
-class EQ3_math:
+class EQ3_Math:
     def __init__(self, V_f, V_o, a, X_o, X_i):
         self.V_f = V_f
         self.V_o = V_o
@@ -93,25 +93,25 @@ class EQ1_IN:
     def EQ1(self):
         if self.inp == 1:
             print("V_f = V_o + a * t")
-            V_f = EQ1_math.calculate_Vf(
+            V_f = EQ1_Math.calculate_Vf(
                 int(input("V_o: ")), int(input("a: ")), int(input("t: "))
             )
             return V_f
         if self.inp == 2:
             print("V_o = V_f - (a * t)")
-            V_o = EQ1_math.calculate_Vo(
+            V_o = EQ1_Math.calculate_Vo(
                 int(input("V_f: ")), int(input("a: ")), int(input("t: "))
             )
             return V_o
         if self.inp == 3:
             print("a = (V_f - V_o) / t")
-            a = EQ1_math.calculate_a(
+            a = EQ1_Math.calculate_a(
                 int(input("V_f: ")), int(input("V_o: ")), int(input("t: "))
             )
             return a
         if self.inp == 4:
             print("t = (V_f - V_o) / a")
-            t = EQ1_math.calculate_t(
+            t = EQ1_Math.calculate_t(
                 int(input("V_f: ")), int(input("V_o: ")), int(input("a: "))
             )
             return t
@@ -126,7 +126,7 @@ class EQ2_IN:
     def EQ2(self):
         if self.inp == 1:
             print("X_f = X_o + (V_o * t) + (0.5 * a * t^2)")
-            X_f = EQ2_math.calculate_Xf(
+            X_f = EQ2_Math.calculate_Xf(
                 int(input("X_o: ")),
                 int(input("V_o: ")),
                 int(input("a: ")),
@@ -135,7 +135,7 @@ class EQ2_IN:
             return X_f
         if self.inp == 2:
             print("X_o = X_f - (V_o * t) - (0.5 * a * t^2)")
-            X_o = EQ2_math.calculate_Xo(
+            X_o = EQ2_Math.calculate_Xo(
                 int(input("X_f: ")),
                 int(input("V_o: ")),
                 int(input("a: ")),
@@ -144,7 +144,7 @@ class EQ2_IN:
             return X_o
         if self.inp == 3:
             print("V_o=((X_f - X_o) - (.5*a*t^2))/t")
-            V_o = EQ2_math.calculate_Vo(
+            V_o = EQ2_Math.calculate_Vo(
                 int(input("X_f: ")),
                 int(input("X_o: ")),
                 int(input("a: ")),
@@ -153,7 +153,7 @@ class EQ2_IN:
             return V_o
         if self.inp == 4:
             print("quadratic eq")
-            t = EQ2_math.calculate_t(
+            t = EQ2_Math.calculate_t(
                 int(input("X_f: ")),
                 int(input("X_o: ")),
                 int(input("V_o")),
@@ -162,7 +162,7 @@ class EQ2_IN:
             return t
         if self.inp == 5:
             print("a = 2((X_f - X_o) - (V_o * t))/t^2")
-            a = EQ2_math.calculate_a(
+            a = EQ2_Math.calculate_a(
                 int(input("X_f: ")),
                 int(input("X_o: ")),
                 int(input("V_o: ")),
@@ -180,7 +180,7 @@ class EQ3_IN:
     def EQ3(self):
         if self.inp == 1:
             print("V_f = sqrt((V_o^2) + (2*a*ΔX))")
-            V_f = EQ3_math.calculate_Vf(
+            V_f = EQ3_Math.calculate_Vf(
                 int(input("V_o: ")),
                 int(input("a: ")),
                 int(input("X_f: ")),
@@ -189,7 +189,7 @@ class EQ3_IN:
             return V_f
         if self.inp == 2:
             print("V_o = sqrt((V_f^2) - (2*a*ΔX))")
-            V_o = EQ3_math.calculate_Vo(
+            V_o = EQ3_Math.calculate_Vo(
                 int(input("V_f: ")),
                 int(input("a: ")),
                 int(input("X_f: ")),
@@ -198,7 +198,7 @@ class EQ3_IN:
             return V_o
         if self.inp == 3:
             print("a = (V_f^2 - V_o^2)/2ΔX")
-            a = EQ3_math.calculate_a(
+            a = EQ3_Math.calculate_a(
                 int(input("V_f: ")),
                 int(input("V_o: ")),
                 int(input("X_f: ")),
@@ -207,7 +207,7 @@ class EQ3_IN:
             return a
         if self.inp == 4:
             print("X_o = -(((V_f^2) - (V_o^2)) / (2 * a)) + (X_f)")
-            X_o = EQ3_math.calculate_Xo(
+            X_o = EQ3_Math.calculate_Xo(
                 int(input("V_f: ")),
                 int(input("V_o: ")),
                 int(input("a: ")),
@@ -217,7 +217,7 @@ class EQ3_IN:
             # V_f, V_o, a, X_f
         if self.inp == 5:
             print("X_f= (((V_f**2) - (V_o**2)) / (2 * a)) + (X_o)")
-            X_f = EQ3_math.calculate_Xf(  # V_f, V_o, a, X_o
+            X_f = EQ3_Math.calculate_Xf(  # V_f, V_o, a, X_o
                 int(input("V_f: ")),
                 int(input("V_o: ")),
                 int(input("a: ")),
