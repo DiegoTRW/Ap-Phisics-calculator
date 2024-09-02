@@ -1,9 +1,7 @@
 import kinematics
 
-# import midsend as ms
 
-
-class phys_run:
+class PhysRun:
     def __init__(self):
         pass
 
@@ -19,7 +17,7 @@ what are calculating
         )
 
         if en == 1:
-            return phys_run.Kin_UI()
+            return PhysRun.Kin_UI()
 
         if en == 9:
             return "Program ended"
@@ -43,7 +41,7 @@ Which equation are you using?
         if ent == 3:
             print(kinematics.UI().EQ3_ui())
         if ent == 4:
-            phys_run.run()
+            PhysRun.run()
 
 
-print(phys_run.run())
+# print(PhysRun.run())

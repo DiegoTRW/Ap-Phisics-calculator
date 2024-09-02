@@ -12,4 +12,4 @@ what are you trying to run
 )
 
 if a == 1:
-    print(phizrun.phys_run.run())
+    print(phizrun.PhysRun.run())
