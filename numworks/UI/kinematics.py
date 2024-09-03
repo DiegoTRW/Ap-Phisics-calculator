@@ -94,25 +94,25 @@ class EQ1_IN:
         if self.inp == 1:
             print("V_f = V_o + a * t")
             V_f = EQ1_Math.calculate_Vf(
-                int(input("V_o: ")), int(input("a: ")), int(input("t: "))
+                float(input("V_o: ")), float(input("a: ")), float(input("t: "))
             )
             return V_f
         if self.inp == 2:
             print("V_o = V_f - (a * t)")
             V_o = EQ1_Math.calculate_Vo(
-                int(input("V_f: ")), int(input("a: ")), int(input("t: "))
+                float(input("V_f: ")), float(input("a: ")), float(input("t: "))
             )
             return V_o
         if self.inp == 3:
             print("a = (V_f - V_o) / t")
             a = EQ1_Math.calculate_a(
-                int(input("V_f: ")), int(input("V_o: ")), int(input("t: "))
+                float(input("V_f: ")), float(input("V_o: ")), float(input("t: "))
             )
             return a
         if self.inp == 4:
             print("t = (V_f - V_o) / a")
             t = EQ1_Math.calculate_t(
-                int(input("V_f: ")), int(input("V_o: ")), int(input("a: "))
+                float(input("V_f: ")), float(input("V_o: ")), float(input("a: "))
             )
             return t
         if 5 == self.inp:
@@ -127,46 +127,46 @@ class EQ2_IN:
         if self.inp == 1:
             print("X_f = X_o + (V_o * t) + (0.5 * a * t^2)")
             X_f = EQ2_Math.calculate_Xf(
-                int(input("X_o: ")),
-                int(input("V_o: ")),
-                int(input("a: ")),
-                int(input("t: ")),
+                float(input("X_o: ")),
+                float(input("V_o: ")),
+                float(input("a: ")),
+                float(input("t: ")),
             )
             return X_f
         if self.inp == 2:
             print("X_o = X_f - (V_o * t) - (0.5 * a * t^2)")
             X_o = EQ2_Math.calculate_Xo(
-                int(input("X_f: ")),
-                int(input("V_o: ")),
-                int(input("a: ")),
-                int(input("t: ")),
+                float(input("X_f: ")),
+                float(input("V_o: ")),
+                float(input("a: ")),
+                float(input("t: ")),
             )
             return X_o
         if self.inp == 3:
             print("V_o=((X_f - X_o) - (.5*a*t^2))/t")
             V_o = EQ2_Math.calculate_Vo(
-                int(input("X_f: ")),
-                int(input("X_o: ")),
-                int(input("a: ")),
-                int(input("t: ")),
+                float(input("X_f: ")),
+                float(input("X_o: ")),
+                float(input("a: ")),
+                float(input("t: ")),
             )
             return V_o
         if self.inp == 4:
             print("quadratic eq")
             t = EQ2_Math.calculate_t(
-                int(input("X_f: ")),
-                int(input("X_o: ")),
-                int(input("V_o")),
-                int(input("a: ")),
+                float(input("X_f: ")),
+                float(input("X_o: ")),
+                float(input("V_o")),
+                float(input("a: ")),
             )
             return t
         if self.inp == 5:
             print("a = 2((X_f - X_o) - (V_o * t))/t^2")
             a = EQ2_Math.calculate_a(
-                int(input("X_f: ")),
-                int(input("X_o: ")),
-                int(input("V_o: ")),
-                int(input("t: ")),
+                float(input("X_f: ")),
+                float(input("X_o: ")),
+                float(input("V_o: ")),
+                float(input("t: ")),
             )
             return a
         if self.inp == 6:
@@ -181,47 +181,47 @@ class EQ3_IN:
         if self.inp == 1:
             print("V_f = sqrt((V_o^2) + (2*a*ΔX))")
             V_f = EQ3_Math.calculate_Vf(
-                int(input("V_o: ")),
-                int(input("a: ")),
-                int(input("X_f: ")),
-                int(input("X_o: ")),
+                float(input("V_o: ")),
+                float(input("a: ")),
+                float(input("X_f: ")),
+                float(input("X_o: ")),
             )
             return V_f
         if self.inp == 2:
             print("V_o = sqrt((V_f^2) - (2*a*ΔX))")
             V_o = EQ3_Math.calculate_Vo(
-                int(input("V_f: ")),
-                int(input("a: ")),
-                int(input("X_f: ")),
-                int(input("X_o: ")),
+                float(input("V_f: ")),
+                float(input("a: ")),
+                float(input("X_f: ")),
+                float(input("X_o: ")),
             )
             return V_o
         if self.inp == 3:
             print("a = (V_f^2 - V_o^2)/2ΔX")
             a = EQ3_Math.calculate_a(
-                int(input("V_f: ")),
-                int(input("V_o: ")),
-                int(input("X_f: ")),
-                int(input("X_o: ")),
+                float(input("V_f: ")),
+                float(input("V_o: ")),
+                float(input("X_f: ")),
+                float(input("X_o: ")),
             )
             return a
         if self.inp == 4:
             print("X_o = -(((V_f^2) - (V_o^2)) / (2 * a)) + (X_f)")
             X_o = EQ3_Math.calculate_Xo(
-                int(input("V_f: ")),
-                int(input("V_o: ")),
-                int(input("a: ")),
-                int(input("X_f: ")),
+                float(input("V_f: ")),
+                float(input("V_o: ")),
+                float(input("a: ")),
+                float(input("X_f: ")),
             )
             return X_o
             # V_f, V_o, a, X_f
         if self.inp == 5:
             print("X_f= (((V_f**2) - (V_o**2)) / (2 * a)) + (X_o)")
             X_f = EQ3_Math.calculate_Xf(  # V_f, V_o, a, X_o
-                int(input("V_f: ")),
-                int(input("V_o: ")),
-                int(input("a: ")),
-                int(input("X_o: ")),
+                float(input("V_f: ")),
+                float(input("V_o: ")),
+                float(input("a: ")),
+                float(input("X_o: ")),
             )
             return X_f
         if self.inp == 6:
